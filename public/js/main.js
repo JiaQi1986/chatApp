@@ -22,7 +22,7 @@
     //grab the first from the inout field at the bottom of the page
     msg = `${nickName} says ${chatMessage.value}`;
 
-    //emit a chat eventso that we can pass it through to the server (and everyone else)
+    //emit a chat event so that we can pass it through to the server (and everyone else)
     socket.emit('chat message', msg);
     chatMessage.value = '';
     return false;
